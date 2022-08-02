@@ -17,6 +17,7 @@ contract Memeth is ERC721, ERC721Enumerable, ERC721URIStorage {
     function _burn(uint256 tokenId) internal override(ERC721, ERC721URIStorage) {
         super._burn(tokenId);
     }
+    
     function tokenURI(uint256 tokenId)
         public
         view
