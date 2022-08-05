@@ -34,7 +34,7 @@ contract Memeth is ERC721, ERC721Enumerable, ERC721URIStorage {
     {
         return super.supportsInterface(interfaceId);
     }
-    constructor() ERC721("MemethCertificat", "MCT") {}
+    constructor() ERC721("MemethCertificate", "MCT") {}
     function mint(string memory _uri) public payable {
         uint256 mintIndex = totalSupply();
         _safeMint(msg.sender, mintIndex);
